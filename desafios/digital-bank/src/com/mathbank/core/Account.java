@@ -67,16 +67,16 @@ public abstract class Account implements IAccount {
     }
 
     protected void printStatementInfo() {
-        System.out.println("Account ID: " + idAccount);
-        System.out.println("Account type: " + accountType);
-        System.out.println("Balance: " + balance);
-        System.out.println("Transactions:");
+        System.out.println("ID da conta: " + idAccount);
+        System.out.println("Tipo de conta: " + accountType);
+        System.out.println("Saldo: " + balance);
+        System.out.println("Transações:");
         for(Transaction transaction : transactions) {
             LOGGER.info("   ID: " + transaction.getId());
-            LOGGER.info("   Amount: " + transaction.getAmount());
-            LOGGER.info("   Description: " + transaction.getDescription());
-            LOGGER.info("   Get Account: " + transaction.getAccount());
-            LOGGER.info("   To Account: " + transaction.getToAccount());
+            LOGGER.info("   Valor: " + transaction.getAmount());
+            LOGGER.info("   Descrição: " + transaction.getDescription());
+            LOGGER.info("   Obter conta: " + transaction.getAccount());
+            LOGGER.info("   Para a conta: " + transaction.getToAccount());
         }
     }
 

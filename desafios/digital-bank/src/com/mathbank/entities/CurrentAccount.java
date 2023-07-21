@@ -19,7 +19,7 @@ public class CurrentAccount extends Account {
 
         creditLimit -= amount;
 
-        System.out.println("You use credit: " + amount);
+        System.out.println("Crédito usado: " + amount);
     }
 
     @Override
@@ -37,7 +37,7 @@ public class CurrentAccount extends Account {
 
         System.out.println("===== EXTRATO BANCÁRIO (C. Corrente) =====");
         super.printStatementInfo();
-        System.out.println("Credit limit: " + creditLimit);
+        System.out.println("Limite de crédito: " + creditLimit);
 
         System.out.println();
     }
