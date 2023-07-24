@@ -51,11 +51,17 @@ public abstract class Account implements IAccount {
 
     @Override
     public void addTransaction(double amount, String description, IAccount toAccount) {
-        if (description.equals("Deposit")) {
+        if(description.equals("Deposit")) {
             deposit(amount);
         } 
-        else if (description.equals("Transfer")) {
+        else if(description.equals("Transfer")) {
             transfer(amount, toAccount);
+        }
+        else if(description.equals("PayBill")) {
+            payBill(ACCOUNT_ID_START);
+        }
+        else if(description.equals("Withdraw")) {
+            withdraw(amount);
         }
 
         Transaction transaction = new Transaction(amount, description, this, (Account) toAccount);

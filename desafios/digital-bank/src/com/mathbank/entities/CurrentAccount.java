@@ -7,6 +7,9 @@ public class CurrentAccount extends Account {
     private Client client;
     private double creditLimit;
 
+    private boolean loan;
+    private double valueLoan;
+
     public CurrentAccount(double balance, String accountType, double creditLimit) {
         super(balance, accountType);
         this.creditLimit = creditLimit;
