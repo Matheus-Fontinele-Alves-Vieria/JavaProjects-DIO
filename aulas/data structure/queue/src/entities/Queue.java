@@ -13,12 +13,14 @@ public class Queue {
         return refNoIn == null ? true : false;
     }
 
-    public void enqueue(No newNo) {
+    public void enqueue(Object object) {
+        No newNo = new No(object);
+
         newNo.setRefNo(refNoIn);
         refNoIn = newNo;
     }
 
-    public No first() {
+    public Object first() {
         if(!isEmpty()) {
             No firstNo = refNoIn;
 
@@ -30,13 +32,13 @@ public class Queue {
                 }
             }
 
-            return firstNo;
+            return firstNo.getObject();
         } else {
             return null;
         }
     }
 
-    public No dequeue() {
+    public Object dequeue() {
         if(!isEmpty()) {
             No firsNo = refNoIn;
             No noAssistant = refNoIn;
@@ -51,7 +53,7 @@ public class Queue {
                 }
             }
 
-            return firsNo;
+            return firsNo.getObject();
         } else {
             return null;
         }

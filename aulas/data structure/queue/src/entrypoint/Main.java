@@ -1,6 +1,5 @@
 package entrypoint;
 
-import core.No;
 import entities.Queue;
 
 public class Main {
@@ -9,11 +8,11 @@ public class Main {
 
         System.out.println();
 
-        queue.enqueue(new No(1));
-        queue.enqueue(new No(2));
-        queue.enqueue(new No(3));
-        queue.enqueue(new No(4));
-        queue.enqueue(new No(5));
+        queue.enqueue(1);
+        queue.enqueue(2);
+        queue.enqueue(3);
+        queue.enqueue(4);
+        queue.enqueue(5);
 
         System.out.println(queue);
 
