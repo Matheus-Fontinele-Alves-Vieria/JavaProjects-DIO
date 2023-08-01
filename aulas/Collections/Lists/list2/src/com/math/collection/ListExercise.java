@@ -49,6 +49,11 @@ public class ListExercise {
 
         System.out.println(answers);
 
+        // answers.forEach(ans -> {
+        //     System.out.println("Percorrendo:");
+        //     System.out.println("Resposta: " + ans);
+        // });
+
         int count = 0;
 
         Iterator<String> iterator = answers.iterator();
