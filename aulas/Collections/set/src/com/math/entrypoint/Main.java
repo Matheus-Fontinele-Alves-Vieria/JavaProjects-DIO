@@ -106,5 +106,5 @@ public class Main {
         System.out.println("Confirindo se o conjunto está vazio: " + messageIsEmpty);
 
         System.out.println();
-    } 
+    }
 }
